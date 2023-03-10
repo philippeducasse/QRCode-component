@@ -3,44 +3,56 @@
 - Light gray: hsl(212, 45%, 89%)
 - Grayish blue: hsl(220, 15%, 55%)
 - Dark blue: hsl(218, 44%, 22%)
+
+FIX PADDING OF MAIN WHITE BOX, center card vertically by using flexbox height 100 vh
 */
 
 body {
     background-color:hsl(212, 45%, 89%);
     font-family: "Open Sans", sans-serif;
-}
+    display:flex;
+    align-items: center;
+    height: 100vh;
+    box-sizing:border-box;
+    justify-content: center;
+    flex-direction: column;
+    }
 
 .QRcode {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 100px;
-    margin:100px 475px;
-    min-width: none;
-    max-width: 1440px;
-    box-sizing:border-box;
-    align-items: center;
+    margin:auto 0;
+    text-align: center;
     background-color: hsl(0, 0%, 100%);
     border-radius: 5%;
     
+    
 }
-.QRcode__text {
+
+.QRcode__content{
+    width: 250px;
+    margin: 20px 20px;
+}
+main {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
     text-align: center;
+    
+    
 }
 
-.QRcode__image {
-    width: 85%;
+img {
+    
     border-radius: 5%;
-    margin: 20px 20px;
+    
 }
-.QRcode__maintext {
+h1 {
+    
     font-size: 20px;
     text-align: center;
     font-weight: 700;
 }
-.QRcode__secondarytext {
+p {
+    
     font-size: 15px;
     font-weight: 200;
 }
