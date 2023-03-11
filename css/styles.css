@@ -4,12 +4,11 @@
 - Grayish blue: hsl(220, 15%, 55%)
 - Dark blue: hsl(218, 44%, 22%)
 
-FIX PADDING OF MAIN WHITE BOX, center card vertically by using flexbox height 100 vh
 */
 
 body {
     background-color:hsl(212, 45%, 89%);
-    font-family: "Open Sans", sans-serif;
+    font-family: "Outfit", sans-serif;
     display:flex;
     align-items: center;
     height: 100vh;
@@ -19,44 +18,25 @@ body {
     }
 
 .QRcode {
-    margin:auto 0;
-    text-align: center;
     background-color: hsl(0, 0%, 100%);
     border-radius: 5%;
-    
-    
-}
+    text-align: center;
+    padding: 15px;
+    }
 
 .QRcode__content{
     width: 250px;
-    margin: 20px 20px;
-}
-main {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    
-    
-}
-
-img {
-    
     border-radius: 5%;
-    
-}
+ }
+
 h1 {
-    
     font-size: 20px;
-    text-align: center;
     font-weight: 700;
 }
 p {
-    
     font-size: 15px;
     font-weight: 200;
 }
-
 
 .attribution { 
     margin: 50px;
